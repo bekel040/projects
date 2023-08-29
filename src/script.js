@@ -54,7 +54,7 @@ function formatDate(new_Date) {
 
   let day = day_array[new_Date.getDay()];
   let time = now.getHours() + ":" + now.getMinutes();
-  let currentDate = `Today is ${day}, ${time}`;
+  let currentDate = `${day}, ${time}`;
   return currentDate;
 }
 

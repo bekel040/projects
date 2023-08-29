@@ -15,29 +15,42 @@
     <title>Document</title>
   </head>
   <link rel="stylesheet" href="src/styles.css" />
+  
   <body>
-    <div class="container">
-      <h3 class="date">currentDate</h3>
-      <span class ="location ">
+    <video autoplay="" muted="" loop="" id="background-video">
+      <source src="imgs/clouds.mp4" type="video/mp4">
+    </video>
 
-      
-      <form id="city-search">
-        <input
+    <div class="container">
+      <div class = "wrapper"> 
+      <border> 
+      <span class ="location ">
+        <form id="city-search">
+          <input
           type="text"
           id="search-result"
           placeholder="search for cities"
           required
-        />
-        <input type="submit" value="Search" required />
-      </form>
-      <button>
-        Current Location
-      </button>
+          />
+         <input type="submit" value="Search" required />
+        </form>
+        <button>
+          Current Location
+        </button>
       </span>
       <br />
       <div class="row">
         <div class="col">
-          <h2 class="city">Minneapolis</h2>
+          <ul>
+            <li>
+              <h2 class="city">Minneapolis</h2>
+            </li>
+            <li>
+              <h3 class="date">currentDate</h3>
+            </li>
+
+          </ul>
+          
         </br>
           <span>
             <h2 id="temp">76°</h2>
@@ -90,21 +103,19 @@
             <h2>82°</h2>
           </div>
         </div>
-        <div class="col-2">
-          <div class="forcast">
-            <p>Wednesday</p>
-            <i class="fa-solid fa-cloud-sun fa-2x" style="color: #599ee8"></i>
-            <h2>79°</h2>
-          </div>
-        </div>
+        
+      </div>
+      </border>
+      <footer class = "source">
+                <a href="https://github.com/bekel040/projects" target="_blank"> Open-Source code </a>
+                by Asanti Bekele
+    </footer>
       </div>
 
     </div>
-    <div class = "source">
-                <a href="https://github.com/bekel040/projects" target="_blank"> Open-Source code </a>
-                by Asanti Bekele
-</div>
+
   </body>
+  
   <script
     src="https://kit.fontawesome.com/233eb591eb.js"
     crossorigin="anonymous"
